@@ -38,17 +38,22 @@ h2{
 }
 .h2-textweight{
   font-weight: lighter;
+  letter-spacing: 3pt;
 }
 .button{
     border:1px solid #e1e6e8;
     color: #2fc5e0;
-    padding: 15px 15px;
+    padding: 3px 3px;
     text-align:center;
     text-decoration: none;
     display: inline-block;
     font-size: 18pt;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
+    letter-spacing: 3pt;
 }
+
+
+
 .button:hover{
   background-color:#e1e6e8;
     color: white;
