@@ -1,0 +1,55 @@
+html body{
+
+
+}
+
+body{
+  font-family:"Gill Sans";
+  margin:20% 20%;
+
+}
+
+h1{
+  font-size: 20pt;
+  font-weight: lighter;
+  letter-spacing: 3pt;
+  line-height: 60px;
+
+}
+p{
+  margin-bottom: 40%;
+}
+
+h2{
+  font-size: 20pt;
+  font-weight: normal;
+  line-height: 200px;
+
+}
+
+
+
+.line-height{
+  line-height: 500px;
+  letter-spacing: 5pt;
+}
+.grow-old{
+  text-shadow: 3px 3px;
+}
+.h2-textweight{
+  font-weight: lighter;
+}
+.button{
+    border:1px solid #e1e6e8;
+    color: #2fc5e0;
+    padding: 15px 15px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18pt;
+    transition-duration: 0.4s
+}
+.button:hover{
+  background-color:#e1e6e8;
+    color: white;
+}
