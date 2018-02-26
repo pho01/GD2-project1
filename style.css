@@ -27,7 +27,13 @@ h2{
 
 }
 
+h4{
+  font-size: 40pt;
+  font-weight: lighter;
+  letter-spacing: 3pt;
+  text-shadow: 4px 4px;
 
+}
 
 .line-height{
   line-height: 500px;
@@ -51,10 +57,21 @@ h2{
     transition-duration: 0.4s;
     letter-spacing: 3pt;
 }
-
-
-
 .button:hover{
   background-color:#e1e6e8;
     color: white;
+}
+.h4-1{
+  animation-name: fadein;
+
+
+}
+@keyframes fadein {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:0.8
+  }
+
 }
