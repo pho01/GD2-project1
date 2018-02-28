@@ -6,7 +6,40 @@ html body{
 body{
   font-family:"Gill Sans";
   margin:20% 20%;
+  animation:colorchange 60s infinite;
+  animation-direction: alternate;
+  background-image:url(moon.png);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:20%;
 
+
+}
+
+
+
+@keyframes colorchange {
+  0%{
+    background-color: white;
+  }
+  70%{
+    background-color: #b6c1d3;
+  }
+  80%{
+    background-color: #565b63;
+  }
+  100%{
+    background-color: black;
+  }
+
+}
+
+ul{
+  margin-left: 35%;
+  margin-top: 35%;
+  margin-bottom: 70%;
+  letter-spacing: 5pt;
+  color:white;
 }
 
 
@@ -23,7 +56,6 @@ span{
   animation-direction: alternate;
   width: 100px;
     height: 50px;
-    background-color:white;
     position: relative;
 }
 
@@ -31,10 +63,6 @@ span{
   animation:moveRight 3s infinite;
   animation-timing-function:linear;
   animation-direction: alternate;
-  width: 100px;
-    height: 50px;
-    background-color:white;
-    position: relative;
 }
 
 @keyframes moveRight{
@@ -74,6 +102,8 @@ h3{
   letter-spacing: 5pt;
 }
 
+
+
 h4{
   font-size: 40pt;
   font-weight: lighter;
@@ -82,25 +112,54 @@ h4{
 }
 
 .massy{
-  animation:undone;
-  text-shadow: 4px 4px;
+  animation:massy 4s infinite;
+  animation-timing-function: ease-in-out;
   line-height: 10pt;
   letter-spacing: 60%;
-  margin-top: -90%;
+  margin-top: -140%;
   margin-left: -2%;
 }
 
+@keyframes massy {
+  0%{ transform:translate(0,0px);
+  }
+  65%{
+    transform: translate(0,-40px);
+  }
+  100%{
+    transform: translate(0,1px);
+  }
+
+
+}
+
 .density{
-  animation:undone;
+  animation:density 5s infinite;
+  animation-timing-function: ease-in-out;
   text-shadow: 4px 4px;
   line-height: 10pt;
   letter-spacing: 60%;
   margin-top: -50%;
   margin-left: -2%;
+
+}
+
+@keyframes density {
+  0%{ transform:translate(0,0px);
+  }
+  65%{
+    transform: translate(0,15px);
+    opacity:50%;
+  }
+  100%{
+    transform: translate(0,-0px);
+  }
+
 }
 
 .rotate{
-  animation:undone;
+  animation:density 3s infinite;
+  animation-timing-function: ease-in-out;
   text-shadow: 4px 4px;
   line-height: 10pt;
   letter-spacing: 60%;
@@ -111,13 +170,43 @@ h4{
 
 }
 
+@keyframes roatte {
+  0%{ transform:translate(10px,0px);
+  }
+  65%{
+    transform: translate(-10px,0px);
+  }
+  100%{
+    transform: translate(15px,0px);
+  }
+
+}
+
+
+
+.floating{
+  animation:floating 8s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0%{ transform:translate(0,0px);
+  }
+  65%{
+    transform: translate(50px,0px);
+  }
+  100%{
+    transform: translate(30,0px);
+  }
+
+}
+
 .ou{
   animation:up-and-down 8ms infinite;
   animation-timing-function: ease;
   animation-direction: alternate;
   width: 20px;
   height: 20px;
-  background-color:white;
   position: relative;
 }
 
@@ -142,7 +231,8 @@ h5{
 .ending{
   animation:undone;
   margin-top: 50%;
-  
+  color:#2fc5e0;
+
 }
 
 .line-height{
