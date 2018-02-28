@@ -35,24 +35,24 @@ margin-bottom: 100%;
 }
 
 .small-star{
-  animation:bling 0.5s infinite;
+  animation:bling 2s infinite;
   width:10%;
   height:10%;
   position: absolute;
   top:900em;
   left:350pt;
-  animation-timing-function:ease-in-out;
+  animation-timing-function:linear;
 
 }
 
 .small-star-1{
-  animation:bling 0.5s infinite;
+  animation:bling 2s infinite;
   width:5%;
   height:5%;
   position: absolute;
   top:895em;
   left:750pt;
-  animation-timing-function:ease-in-out;
+  animation-timing-function:linear;
   animation-direction: reverse;
 
 }
@@ -82,21 +82,7 @@ margin-bottom: 100%;
 }
 
 @keyframes bling {
-  0%{
-    transform: rotate(0,0,0);
-  }
-  25%{
-    transform: rotateZ(90deg);
-  }
-  50%{
-    transform:rotateZ(180deg);
-  }
-  75%{
-    transform:rotateZ(270deg);
-  }
-  100%{
-    transform:rotateZ(360deg);
-  }
+100% { transform:rotate(360deg); }
 }
 
 @keyframes bling-1 {
@@ -174,6 +160,79 @@ h1{
   line-height: 60px;
 
 }
+
+.cloud_1{
+   width: 10%;
+   height: 10%;
+   animation:cloud_1 30s infinite;
+   animation-timing-function: linear;
+   position:absolute;
+   top:450em;
+
+}
+
+.cloud_2{
+   width: 5%;
+   height: 5%;
+   position:absolute;
+   top:456em;
+   left:10em;
+   animation:cloud_2 40s infinite;
+   animation-timing-function: linear;
+
+
+}
+
+@keyframes cloud_1 {
+  0%{
+    left:20em;
+  }
+  25%{
+    left:300pt;
+  }
+
+  70%{
+    left:500pt;
+  }
+  100%{
+    left:20em;
+  }
+
+}
+
+@keyframes cloud_2 {
+  0%{
+    left:60em;
+  }
+  40%{
+    left:15em;
+  }
+  60%{
+    left:40em;
+  }
+  70%{
+    left:50em;
+  }
+  100%{
+    left:15em;
+  }
+
+}
+
+.sun{
+  position:absolute;
+  top: 100em;
+  width:10%;
+  animation:sun 3s linear infinite;
+
+
+}
+
+@keyframes sun {
+100% { transform:rotate(360deg); }
+}
+
+
 span{
   animation:moveRight 3s infinite;
   animation-timing-function: ease-out;
@@ -223,7 +282,7 @@ h3{
 .weight{
   font-weight:bold;
   letter-spacing: 5pt;
-  animation:shine 9s infinite linear;
+  animation:shine 8s infinite linear;
   background: linear-gradient(to right, #2fc5e0 20%, #000000 40%, #000000 60%, #2fc5e0 80%)
   color:black;
   -webkit-background-clip:text;
